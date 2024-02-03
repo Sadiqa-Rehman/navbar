@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------- css for form ------------>
+    <link rel="stylesheet" href="style.css">
+    <!--------- css for navbar ------------>
+    <link rel="stylesheet" href="nvbr.css">
+    <!--------------------- icon cdn -------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>navbar</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">WebDev.</a>
+            <ul class="nav-menu">
+                <ul class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </ul>
+                <ul class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </ul>
+                <ul class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </ul>
+                <ul class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </ul>
+
+            </ul>
+            <button class="mlog" onclick="Signup()">Signup</button>
+            <!-------------------------------------------
+                          for mobile
+             -------------------------------------------->
+            <div class="mobile">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <!------------------------------ 
+                  form
+    ---------------------------->
+
+
+    <div class="box " id="myForm">
+        <div id="login">
+            <button class="closeForm" onclick="closeForm()"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+            <h2 class="heading">LOGIN</h2>
+            <form action="" class="form-container">
+
+                <div class="inputDiv">
+                    <label for="email" class="email">Email</label>
+                    <div class="userArea">
+                        <i class="fa fa-envelope" aria-hidden="true"></i><input type="text" name="email" id="email"
+                            placeholder="Type your Email-Id" required>
+                    </div>
+                    <hr>
+                </div>
+                <div class="inputDiv">
+                    <label for="password" class="username">Password</label>
+                    <div class="userArea">
+                        <i class="fa-solid fa-key"></i><input type="password" name="password" id="password"
+                            placeholder="Type your password" required>
+                    </div>
+                    <hr>
+                </div>
+
+                <span class="forgotPassword">Forgot password?</span>
+                <button class="btn" type="submit">Login</button>
+                <hr>
+                <div class="formBottom">
+                    <p> login using</p>
+                    <ul class="account">
+                        <a href="" target="_blank">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                        </a>
+                        <a href="" target="_blank">
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                        </a>
+                        <a href="https://www.google.com/" target="_blank">
+                            <li><i class="fa-brands fa-google"></i></li>
+                        </a>
+                    </ul>
+                    <p class="signUp">Don't have account</p>
+                    <a href="sign.html" target="_self" onclick="signin()">SIGN UP</a>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="nvbr.js"></script>
+</body>
+
+</html>
